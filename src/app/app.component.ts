@@ -2,6 +2,7 @@ import { Component, HostListener } from '@angular/core';
 import persoData from '../assets/data/perso.json';
 import { StoreService } from "./services/store.service";
 import { Title } from '@angular/platform-browser';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({

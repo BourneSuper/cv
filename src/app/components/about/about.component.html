@@ -17,6 +17,12 @@
     {{this.store.cvData.profile.summary}}
 </p>
 
+<span style="display: flex; flex-direction: row; justify-content: flex-start;" >
+    <div *ngFor="let temp of store.cvData.profile.tags" style="margin-right: 20px;" >
+        {{temp}}
+    </div>
+</span> 
+
 <!-- <div class="bottom-right" *ngFor="let item of this.store.cvData.social">
     <a [href]="item.link">
         <fa-icon [icon]="item.icon" class="fa-3x"></fa-icon>

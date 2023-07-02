@@ -10,14 +10,15 @@
         <!-- <span class="txt-toolbar">{{store.cvData.profile.firstname}} {{store.cvData.profile.lastname}}</span> -->
         <span class="toolbar-spacer"></span>
         <div class="bottom-right" *ngFor="let item of this.store.cvData.social">
-            <a [href]="item.link" class="social">
+            <a [href]="item.link" class="social" target="_blank">
                 <fa-icon [icon]="item.icon" class="fa-lg toolbar-icon"> </fa-icon>
             </a>
         </div>
         
-        
 
     </mat-toolbar-row>
+    
+    
 </mat-toolbar>
 <mat-sidenav-container class="example-container">
     <mat-sidenav #sidenav mode="side" [opened]="openedSidenav" class="sidenav" [fixedInViewport]="true">
@@ -47,16 +48,22 @@
         <div fxLayout="column wrap" fxLayout.xs="column" fxLayoutAlign="center" class="full-h">
             <app-about></app-about>
         </div>
+        
+        <!-- projects -->
+        <div fxLayout="column wrap" fxLayout.xs="column" fxLayoutAlign="center" class="full-h">
+            <app-project></app-project>
+        </div>
 
         <!-- EXPERIENCES -->
-        <div fxLayout="column wrap" fxLayout.xs="column" fxLayoutAlign="center" class="full-h">
+<!--        <div fxLayout="column wrap" fxLayout.xs="column" fxLayoutAlign="center" class="full-h">
             <app-experiences></app-experiences>
-        </div>
+        </div>-->
+        
 
         <!-- EDUCATION -->
-        <div fxLayout="column wrap" fxLayout.xs="column" fxLayoutAlign="center" class="full-h">
+<!--        <div fxLayout="column wrap" fxLayout.xs="column" fxLayoutAlign="center" class="full-h">
             <app-education></app-education>
-        </div>
+        </div>-->
 
 
         <!-- SKILLS -->

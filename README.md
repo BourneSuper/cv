@@ -1,14 +1,9 @@
 # Personal resume by Angular
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/98ca663bec894044971be473ef6f8069)](https://www.codacy.com/manual/aitahtman/cv?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aitahtman/cv&amp;utm_campaign=Badge_Grade)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
-[![HitCount](http://hits.dwyl.io/aitahtman/cv.svg)](http://hits.dwyl.io/aitahtman/cv)
 
 
 
 simple personal resume application created by Angular and Github pages.
 
- [Live Demo](https://aitahtman.github.io/cv)
 
 
 
@@ -22,7 +17,7 @@ simple personal resume application created by Angular and Github pages.
 #### 1 - clone the repository 
 
 ```shell
-git clone https://github.com/aitahtman/cv.git
+git clone https://github.com/BourneSuper/cv.git
 ```
 
 you can also make a fork on your github account. 
@@ -48,7 +43,7 @@ for that, you have juste to edited the file _src/assets/data/perso.json_
         "photo": "./assets/img/avataaars.png",
         "city": "Avignon, France",
         "phone": "",
-        "mail": "aitahtman.salaheddine@gmail.com",
+        "mail": "john@gmail.com",
         "summary": "Geomatics developer with more than 2 years of experience in the field of geomatics and geographic information systems. Now, i'm under a short-term contract at the French Institute of Agronomic Research (INRA or INRAE) working on UrbaSIMUL project which is a tool dedicated to land prospecting."
     },
     "experiences": [
@@ -110,6 +105,8 @@ NB: you need to make a fork or a copy of the repository on your github account t
 
 
 ```shell
+SET NODE_OPTIONS=-–openssl-legacy-provider
+
 ng build --prod --base-href https://[username].github.io/[repo]/
 
 ngh --no-silent
